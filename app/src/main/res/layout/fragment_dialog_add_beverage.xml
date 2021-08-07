@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/drink_type_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/drink_type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/drink_type"
+        android:lines="1"
+        android:completionThreshold="0"
+        app:layout_constraintStart_toStartOf="@+id/drink_type_id"
+        app:layout_constraintTop_toBottomOf="@+id/drink_type_id" />
+
+    <EditText
+        android:id="@+id/drink_type_alcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Alcohol,%"
+        app:layout_constraintStart_toStartOf="@+id/drink_type_name"
+        app:layout_constraintTop_toBottomOf="@+id/drink_type_name" />
+
+    <CheckBox
+        android:id="@+id/checkBox_sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="has Sugar"
+        app:layout_constraintStart_toStartOf="@+id/drink_type_alcohol"
+        app:layout_constraintTop_toBottomOf="@+id/drink_type_alcohol" />
+
+    <CheckBox
+        android:id="@+id/checkBox_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="is Hot"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_sugar"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_sugar" />
+
+    <Button
+        android:id="@+id/ok_add_edit_drink_type_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_hot"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_hot"
+        android:text="@string/ok"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

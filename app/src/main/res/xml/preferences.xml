@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListPreference
+        app:key="@string/date_pattern"
+        app:title="Date string pattern"
+        app:defaultValue="@string/date_pattern_default"/>
+
+    <ListPreference
+        app:key="@string/time_pattern"
+        app:title="Time string pattern"
+        app:defaultValue="@string/time_pattern_default"/>
+
+</androidx.preference.PreferenceScreen>

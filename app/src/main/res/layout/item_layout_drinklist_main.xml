@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:id="@+id/drinkListItemView">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dateField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:paddingEnd="4dp" />
+
+            <TextView
+                android:id="@+id/timeField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:paddingEnd="4dp" />
+
+        </LinearLayout>
+
+
+
+        <View
+            android:id="@+id/vertical_divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/design_default_color_primary" />
+
+        <TextView
+            android:id="@+id/typeField"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textSize="10pt"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:gravity="bottom"
+            android:paddingHorizontal="4dp"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/volumeField"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:textSize="10pt"
+            android:lines="1"
+            android:gravity="bottom"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/design_default_color_primary" />
+
+</LinearLayout>
+

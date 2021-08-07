@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:title="Show day"
+        android:id="@+id/option_stat_show_day" />
+
+    <item
+        android:title="Show period"
+        android:id="@+id/option_stat_show_period" />
+
+    <item
+        android:title="Show pie"
+        android:id="@+id/option_stat_show_pie" />
+
+</menu>

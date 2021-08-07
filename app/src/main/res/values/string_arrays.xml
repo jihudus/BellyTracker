@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="date_formats">
+        <item>yyyy-MM-dd</item>
+        <item>yyyy/MM/dd</item>
+        <item>MM/dd/yyyy</item>
+        <item>dd.MM.yyyy</item>
+    </string-array>
+
+    <string-array name="date_format_view">
+        <item>1970-12-31</item>
+        <item>1970/12/31</item>
+        <item>12/31/1970</item>
+        <item>31.12.1970</item>
+    </string-array>
+
+    <string-array name="time_formats">
+        <item>HH:mm</item>
+        <item>HH-mm</item>
+    </string-array>
+
+    <string-array name="time_format_view">
+        <item>23:59</item>
+        <item>23-59</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Belly tracker</string>
+    <string name="new_drink_type">Add New</string>
+    <string name="drink_type">Beverage</string>
+    <string name="volume">Volume</string>
+    <string name="time">Time</string>
+    <string name="drink_id">ID</string>
+    <string name="date">Date</string>
+    <string name="ok">OK</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="not_new_drinkType_msg">this beverage already exists. Do you want to change it?</string>
+    <string name="yes_btn">Yes</string>
+    <string name="no_btn">No</string>
+    <string name="change_drink_name_msg">Chande Beverage name, please</string>
+    <string name="export_db_msg">Export Database?</string>
+    <string name="export_cancelled_msg">Export cancelled</string>
+    <string name="from_date">From Date</string>
+    <string name="about">Belly tracker \n\n by Anton Kurnosov \n\n in progress...</string>
+    <string name="date_pattern">date_pattern</string>
+    <string name="date_pattern_default">yyyy-MM-dd</string>
+    <string name="time_pattern">time_pattern</string>
+    <string name="time_pattern_default">HH:mm</string>
+</resources>

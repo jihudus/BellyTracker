@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drink_nav_graph"
+    app:startDestination="@id/drinkListFragment">
+
+    <fragment
+        android:id="@+id/drinkListFragment"
+        android:name="ru.kurant.bellytracker.ui.DrinkListFragment"
+        android:label="Belly Tracker (Drinks)"
+        tools:layout="@layout/fragment_drink_list" >
+        <action
+            android:id="@+id/actionAddDrink"
+            app:destination="@id/addOrEditDrinkFragment" />
+        <action
+            android:id="@+id/action_drinkListFragment_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+        <action
+            android:id="@+id/action_drinkListFragment_to_aboutDialogFragment"
+            app:destination="@id/aboutDialogFragment" />
+        <action
+            android:id="@+id/action_drinkListFragment_to_preferences"
+            app:destination="@id/nav_pref" />
+    </fragment>
+    <fragment
+        android:id="@+id/addOrEditDrinkFragment"
+        android:name="ru.kurant.bellytracker.ui.AddOrEditDrinkFragment"
+        android:label="Add or edit DRINK">
+        <argument
+            android:name="drinkIdArg"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="timeArg"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/actionDrinkAdded"
+            app:destination="@id/drinkListFragment"/>
+        <action
+            android:id="@+id/actionTimePicker"
+            app:destination="@+id/timePickerDialog" />
+        <action
+            android:id="@+id/actionAddBeverage"
+            app:destination="@id/addOrEditBeverageDialogFragment" />
+        <argument
+            android:name="beverageName"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+    </fragment>
+    <dialog
+        android:id="@+id/timePickerDialog"
+        android:name="ru.kurant.bellytracker.ui.TimePickerDialogFragment"
+        android:label="Set the Time">
+        <action
+            android:id="@+id/actionTimeChosen"
+            app:destination="@id/addOrEditDrinkFragment" />
+        <argument
+            android:name="timeAddedArg"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </dialog>
+    <dialog
+        android:id="@+id/addOrEditBeverageDialogFragment"
+        android:name="ru.kurant.bellytracker.ui.AddOrEditBeverageDialogFragment"
+        android:label="AddOrEditBeverageDialogFragment" >
+        <argument
+            android:name="beverageIdArg"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/actionBeverageAdded"
+            app:destination="@id/addOrEditDrinkFragment" />
+        <argument
+            android:name="beverageNameArg"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </dialog>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="ru.kurant.bellytracker.ui.StatisticsFragment"
+        android:label="Statistics" />
+    <dialog
+        android:id="@+id/aboutDialogFragment"
+        android:name="ru.kurant.bellytracker.ui.AboutDialogFragment"
+        android:label="About" />
+    <fragment
+        android:id="@+id/nav_pref"
+        android:name="ru.kurant.bellytracker.controller.share.Preferences"
+        android:label="Preferences" />
+
+</navigation>
